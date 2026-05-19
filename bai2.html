@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 2 — Form Đăng Nhập</title>
+    <link rel="stylesheet" href="bai2.css" />
+  </head>
+  <body>
+    <!-- ============================================================
+    BÀI 2: FORM ĐĂNG NHẬP
+    Yêu cầu:
+      - Form nằm chính giữa màn hình cả chiều ngang lẫn chiều dọc
+      - Có ô Email, Mật khẩu, nút Đăng nhập
+      - Input khi click vào thì border đổi màu xanh + glow
+      - Nút hover đổi màu, nhấn xuống thì hơi thu nhỏ
+    Gợi ý kỹ thuật: Flexbox | :focus | :hover | :active | transition
+  ============================================================ -->
+
+    <!-- BODY dùng Flexbox để căn giữa form -->
+
+    <div class="login-card">
+      <!-- Tiêu đề -->
+      <h2>Đăng Nhập</h2>
+      <!-- Form -->
+      <form class="login-form">
+        <!-- Ô Email -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <!-- Ô Mật khẩu -->
+        <div class="form-group">
+          <label for="password">Mật khẩu</label>
+          <input type="password" id="password" required />
+        </div>
+
+        <!-- Checkbox ghi nhớ -->
+        <div class="form-check">
+          <input type="checkbox" id="remember" />
+          <label for="remember">Ghi nhớ đăng nhập</label>
+        </div>
+        <button type="submit" class="login">Đăng nhập</button>
+        <!-- Nút đăng nhập -->
+      </form>
+    </div>
+  </body>
+</html>

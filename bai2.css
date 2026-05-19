@@ -1,0 +1,156 @@
+/* ============================================================
+  BÀI 2: FORM ĐĂNG NHẬP
+  Viết CSS vào đây
+============================================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- BODY — căn giữa form ---
+  Gợi ý:
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f2f5;
+*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f2f5;
+}
+
+/* --- LOGIN CARD ---
+  Gợi ý:
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    width: 380px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+*/
+.login-card {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    width: 380px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* --- TIÊU ĐỀ --- */
+.login-card h2 {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* --- FORM GROUP — bao label + input --- */
+.form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* --- LABEL --- */
+.form-group label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  background-color: #909090;
+  width: 24%;
+  border-radius: 2px;
+  padding: 2px;
+
+}
+
+/* --- INPUT ---
+  Gợi ý:
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+*/
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+/* --- INPUT :FOCUS ---
+  Gợi ý:
+    border-color: #2E5496;
+    box-shadow: 0 0 0 3px rgba(46, 84, 150, 0.2);
+*/
+.form-group input:focus {
+    border-color: #2E5496;
+    box-shadow: 0 0 0 3px rgba(46, 84, 150, 0.2);
+}
+.form-check input:hover{
+    border-color: #00bf26;
+    box-shadow: 0 0 0 2px rgba(0, 223, 67, 0.509);
+}
+/* --- CHECKBOX ROW --- */
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.form-check input:hover{
+    border-color: #00bf26;
+    box-shadow: 0 0 0 2px rgba(0, 223, 67, 0.509);
+}
+
+/* --- NÚT ĐĂNG NHẬP ---
+  Gợi ý:
+    width: 100%;
+    background: #1F3864;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+*/
+.login {
+    width: 100%;
+    background: #1F3864;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+/* --- NÚT :HOVER --- */
+.login:hover {
+    background: #2369d8;
+    font-size: 97%;
+}
+.login:active{
+    font-size: 110%;
+    transform: scale(0.97);
+}
+
+/* --- NÚT :ACTIVE — cảm giác nhấn xuống ---
+  Gợi ý: transform: scale(0.97);
+*/
+.login:active{
+    font-size: 110%;
+    transform: scale(0.97);
+}

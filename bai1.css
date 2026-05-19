@@ -1,0 +1,133 @@
+/* ============================================================
+  BÀI 1: NAVBAR HOÀN CHỈNH
+  Viết CSS vào đây — đừng xóa các comment gợi ý bên dưới
+============================================================ */
+
+/* --- Reset cơ bản --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- NAVBAR ---
+  Gợi ý:
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+*/
+.navbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgb(48, 48, 48);
+    height:80px;
+    padding:20px;
+}
+
+/* --- LOGO --- */
+.nav-logo a{
+    color:rgb(255, 255, 255);
+    font-size:30px;
+    text-decoration: none;
+    padding: 0 50px;
+    background-color: rgb(150, 150, 150)  ;
+    border-radius: 5px;
+  
+    
+}
+
+/* --- MENU (ul) ---
+  Gợi ý:
+    list-style: none;
+    display: flex;
+    gap: ...;
+*/
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+/* --- TỪNG LINK (li > a) ---
+  Gợi ý:
+    text-decoration: none;
+    position: relative;  ← cần cho ::after
+    padding-bottom: 4px;
+*/
+.nav-menu a {
+    text-decoration: none;
+    position: relative;
+    padding: 6px;
+}
+
+/* --- GẠCH CHÂN TRƯỢT bằng ::after ---
+  Gợi ý:
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0;            ← bắt đầu width = 0 (ẩn)
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease;
+*/
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease;
+}
+
+/* --- HOVER: gạch chân trượt ra ---
+  Gợi ý:
+    width: 100%;         ← mở rộng ra đầy đủ
+*/
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+/* --- LINK ACTIVE --- */
+.nav-menu a.active {
+    color: rgb(0,0,0);
+    background:rgb(118, 118, 118);
+}
+
+/* --- MAIN CONTENT ---
+  Gợi ý: padding-top bằng chiều cao navbar để nội dung không bị che
+*/
+.main-content {
+    padding-top: 70px;
+}
+.nav-link{
+  background-color: rgb(150, 150, 150);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+/* --- HERO SECTION --- */
+.hero {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* --- FILLER --- */
+.filler {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 18px;
+  color: #999;
+}

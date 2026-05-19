@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 4 — Profile Card</title>
+    <link rel="stylesheet" href="bai4.css" />
+  </head>
+  <body>
+    <!-- ============================================================
+    BÀI 4: PROFILE CARD DÙNG POSITION
+    Yêu cầu:
+      - Card có phần header nền xanh, phần body nền trắng
+      - Ảnh avatar nằm giữa header và body (nửa trên nửa dưới)
+      - Badge chấm xanh "Online" ở góc dưới phải của avatar
+      - Tên, chức vụ, 3 chỉ số xếp ngang bên dưới
+      - Hover card thì nổi lên nhẹ
+    Gợi ý kỹ thuật: position relative/absolute | transform | transition | border-radius: 50%
+  ============================================================ -->
+
+    <div class="page">
+      <div class="card">
+        <!-- HEADER card -->
+        <div class="card-header">
+          <!-- AVATAR — đặt ở đây để nằm giữa header và body -->
+          <div class="avatar-wrap">
+            <img
+              class="avatar"
+              src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Facebook_icon_2013.svg"
+              alt="Avatar"
+            />
+            <!-- BADGE ONLINE -->
+            <span class="badge-online"></span>
+          </div>
+        </div>
+
+        <!-- BODY card -->
+        <div class="card-body">
+          <!-- Tên và chức vụ -->
+          <h3 class="card-name">Nguyễn Văn Tài</h3>
+          <p class="card-role">Frontend Developer</p>
+
+          <!-- 3 chỉ số -->
+          <div class="card-stats">
+            <div class="stat">
+              <span class="stat-num">128</span>
+              <span class="stat-lbl">Bài đăng</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">4.2k</span>
+              <span class="stat-lbl">Theo dõi</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">312</span>
+              <span class="stat-lbl">Đang theo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

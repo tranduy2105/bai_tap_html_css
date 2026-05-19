@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài Tập HTML + CSS Inline</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+    BÀI 1: VĂN BẢN CƠ BẢN
+    Thẻ dùng : h1  h2  h3  p  strong  em  br
+    Style gợi ý:
+      style="color: #1F3864;"
+      style="font-size: 24px;"
+      style="text-align: center;"
+      style="text-decoration: underline;"
+      style="background-color: #fff8e1;"
+  ============================================================ -->
+  <section style="border: 2px solid #1558cd; padding: 24px; margin-bottom: 40px; border-radius: 8px;">
+
+    <h2 style="color: #112887; margin-bottom: 16px;">Bài 1 — Văn Bản Cơ Bản</h2>
+
+    <!-- ↓↓↓ CODE CỦA BẠN BẮT ĐẦU TỪ ĐÂY ↓↓↓ -->
+
+<h1 style="color: #235dc2 ;text-align: center;" >SHOPAPP-Cửa hàng thời trang <h1>
+  <h2 style="text-decoration: underline;" >Giới thiệu</h2>
+  <p class="thuonghieu">chúng tôi là <strong>thương hiệu thời trang hàng đầu</strong> tại VN với hơn <em>10 năm kinh nghiệm</em>, chúng tôi mang đến những sản phẩm chất lượng cao  </p>
+  <h3>liên hệ </h3>
+  <p>Email:contact@shopapp.vn<br>Điện thoại: 0901234567<br>Địa chỉ:123 Nguyễn Huệ ,Q1,HCM</p>
+
+    <!-- ↑↑↑ CODE CỦA BẠN KẾT THÚC Ở ĐÂY ↑↑↑ -->
+
+    <!--
+    KẾT QUẢ CẦN ĐẠT:
+      - h1: Tên trang web  → màu xanh #1F3864, căn giữa
+      - h2: "Giới thiệu"   → có gạch chân
+      - p : Mô tả ngắn     → có <strong> và <em> bên trong
+      - h3: "Liên hệ"
+      - p : Thông tin liên hệ → dùng <br> để xuống dòng
+    -->
+  </section>
+
+
+  <!-- ============================================================
+    BÀI 2: DANH SÁCH
+    Thẻ dùng : ul  ol  li
+    Style gợi ý (trên ul/ol):
+      style="list-style-type: square;"
+      style="list-style-type: none;"
+      style="padding-left: 24px;"
+    Style gợi ý (trên li):
+      style="color: #e74c3c;"
+      style="padding: 8px;"
+      style="margin-bottom: 6px;"
+      style="background-color: #f0f8ff;"
+      style="border-left: 4px solid #2E5496; padding-left: 12px;"
+  ============================================================ -->
+  <section style="border: 2px solid #27ae60; padding: 24px; margin-bottom: 40px; border-radius: 8px;">
+
+    <h2 style="color: #27ae60; margin-bottom: 16px;">Bài 2 — Danh Sách</h2>
+
+    <!-- Bài 2A: ul - Thực đơn nhà hàng (ít nhất 5 món, mỗi li màu chữ khác nhau) -->
+    <!-- ↓↓↓ CODE BÀI 2A ↓↓↓ -->
+<h1 style="color: #1F3864;">Thực đơn</h1>
+<ul style="list-style-type: square; padding-left: 24px;">
+  <li style="color: #e74c3c; margin-bottom: 6px;" >Phở Bò-65.000đ</li>
+   <li style="color: #f59e0b; margin-bottom: 6px;" >Bún Bò Huế-55.000đ</li>
+   <li style="color: #15ad64; margin-bottom: 6px;" >Cơm tấm-45.000đ</li>
+   <li style="color: #1f40c6; margin-bottom: 6px;" >Bánh Mì-25.000đ</li>
+   <li style="color: #770c8f; margin-bottom: 6px;" >Gỏi cuốn-35.000đ</li>
+   </ul>
+
+
+
+    <!-- ↑↑↑ HẾT BÀI 2A ↑↑↑ -->
+
+    <!-- Bài 2B: ol - Hướng dẫn đặt hàng 5 bước (mỗi li có background và margin-bottom) -->
+    <!-- ↓↓↓ CODE BÀI 2B ↓↓↓ -->
+  <h1 style="color: #1F3864 ;">Hướng dẫn đặt hàng</h1>
+  <ol style="padding-left: 24px;">
+      <li class="demo"> Chọn sản phẩm </li>
+      <li class="demo">Thêm giỏ hàng</li>
+      <li class="demo">Điền địa chỉ giao hàng</li>
+      <li class="demo">Chọn phương thức thanh toán</li>
+      <li class="demo">Xác nhận đơn hàng</li>
+  </ol>
+
+
+
+    <!-- ↑↑↑ HẾT BÀI 2B ↑↑↑ -->
+
+    <!--
+    KẾT QUẢ CẦN ĐẠT:
+      2A - ul: Thực đơn ≥ 5 món, mỗi <li> màu chữ khác nhau
+      2B - ol: 5 bước đặt hàng, mỗi <li> có background nhạt + margin-bottom
+    -->
+  </section>
+
+
+  <!-- ============================================================
+    BÀI 3: BẢNG DỮ LIỆU
+    Thẻ dùng : table  tr  th  td
+    Style bắt buộc trên <table>:
+      style="border-collapse: collapse; width: 100%;"
+    Style trên <th> và <td>:
+      style="border: 1px solid #ccc; padding: 10px; text-align: left;"
+    Style trên <th> (tiêu đề):
+      style="background-color: #1F3864; color: white;"
+    Style hàng chẵn <tr>:
+      style="background-color: #f9f9f9;"
+    Style màu giá <td>:
+      style="color: #e74c3c; font-weight: bold;"
+  ============================================================ -->
+  <section style="border: 2px solid #f59e0b; padding: 24px; margin-bottom: 40px; border-radius: 8px;">
+
+    <h2 style="color: #b45309; margin-bottom: 16px;">Bài 3 — Bảng Dữ Liệu</h2>
+
+    <!-- Bài 3A: Bảng danh sách học viên — 4 cột: STT | Họ tên | Lớp | Điểm -->
+    <!-- ↓↓↓ CODE BÀI 3A ↓↓↓ -->
+
+<table style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <th style="background-color: #1F3864; color: white; border: 1px solid #ccc; padding: 10px; text-align: left;">STT</th>
+    <th style="background-color: #1F3864; color: white; border: 1px solid #ccc; padding: 10px; text-align: left;">Họ tên</th>
+    <th style="background-color: #1F3864; color: white; border: 1px solid #ccc; padding: 10px; text-align: left;">Lớp</th>
+    <th style="background-color: #1F3864; color: white; border: 1px solid #ccc; padding: 10px; text-align: left;">Điểm</th>
+  </tr>
+  <tr >
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">1</td>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">Nguyễn Văn A</td>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">K01</td>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">8.5</td>
+  </tr>
+    <tr style="background-color: #f9f9f9;">
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">2</td>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">Trần Thị B</td>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">K01</td>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">9.0</td>
+  </tr>
+      <tr>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">3</td>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">Lê Văn C</td>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">K02</td>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">7.5</td>
+  </tr>
+      <tr style="background-color: #f9f9f9;">
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">4</td>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">Trần Thị D</td>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">K01</td>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">8.0</td>
+  </tr>
+  
+</table>
+
+
+    <!-- ↑↑↑ HẾT BÀI 3A ↑↑↑ -->
+
+    <br>
+
+    <!-- Bài 3B: Bảng giá sản phẩm — 4 cột: Sản phẩm | Giá gốc | Giảm giá | Giá bán -->
+    <!-- ↓↓↓ CODE BÀI 3B ↓↓↓ -->
+
+<table style=" border-collapse: collapse; width: 100%;">
+  <tr>
+    <th style="background-color: #1F3864; color: white; border: 1px solid #ccc; padding: 10px; text-align: left;">Sản Phẩm</th>
+    <th style="background-color: #1F3864; color: white; border: 1px solid #ccc; padding: 10px; text-align: left;">Giá gốc</th>
+    <th style="background-color: #1F3864; color: white; border: 1px solid #ccc; padding: 10px; text-align: left;">Giảm giá</th>
+    <th style="background-color: #1F3864; color: white; border: 1px solid #ccc; padding: 10px; text-align: left;">Giá bán</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">Áo thun</td>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">300.000đ</td>
+    <td style="color: #e74c3c; font-weight: bold; border: 1px solid #ccc; padding: 10px; text-align: left;">20%</td>
+    <td style=" border: 1px solid #ccc; padding: 10px; text-align: left;color: #1F3864;">240.000đ</td> 
+  </tr>
+  <tr style="background-color: #f9f9f9;">
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">Quần jean</td>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">500.000đ</td>
+    <td style="color: #e74c3c; font-weight: bold; border: 1px solid #ccc; padding: 10px; text-align: left;">10%</td>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;color: #1F3864;">450.000đ</td> 
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">Giầy sneaker</td>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;">900.000đ</td>
+    <td style="color: #e74c3c; font-weight: bold; border: 1px solid #ccc; padding: 10px; text-align: left;">15%</td>
+    <td style="border: 1px solid #ccc; padding: 10px; text-align: left;color: #1F3864;">765.000đ</td> 
+  </tr>
+  
+</table>
+
+
+    <!-- ↑↑↑ HẾT BÀI 3B ↑↑↑ -->
+
+    <!--
+    KẾT QUẢ CẦN ĐẠT:
+      3A: ≥ 4 hàng, header nền xanh đậm chữ trắng, hàng chẵn nền xám nhạt
+      3B: ≥ 3 sản phẩm, cột Giảm giá màu đỏ, cột Giá bán màu xanh đậm
+    -->
+  </section>
+
+
+  <!-- ============================================================
+    BÀI 4: FORM NHẬP LIỆU
+    Thẻ dùng : form  label  input  select  option  textarea  button
+    Các type của input:
+      type="text"      → nhập chữ
+      type="email"     → nhập email (tự kiểm tra @)
+      type="password"  → ẩn ký tự
+      type="number"    → chỉ nhập số
+      type="checkbox"  → ô tick
+      type="radio"     → chọn 1 trong nhiều (cùng name=)
+    Style gợi ý trên <label>:
+      style="display: block; font-weight: bold; margin-bottom: 4px;"
+    Style gợi ý trên <input> <select> <textarea>:
+            style="width: 300px; padding: 8px; border: 1px solid #ccc;
+                  border-radius: 4px; font-size: 14px;"
+    Style gợi ý trên <button>:
+      style="background-color: #1F3864; color: white; padding: 10px 24px;
+             border: none; border-radius: 6px; font-size: 15px; cursor: pointer;"
+    Bọc mỗi nhóm label+input trong <div>:
+      style="margin-bottom: 16px;"
+  ============================================================ -->
+  <section style="border: 2px solid #8e44ad; padding: 24px; margin-bottom: 40px; border-radius: 8px;">
+
+    <h2 style="color: #8e44ad; margin-bottom: 16px;">Bài 4 — Form Nhập Liệu</h2>
+
+    <!-- Bài 4A: Form đặt hàng
+         Gồm: họ tên (text), email, địa chỉ (textarea),
+              tỉnh/thành (select), thanh toán (radio), nút đặt hàng -->
+    <!-- ↓↓↓ CODE BÀI 4A ↓↓↓ -->
+
+<<form>
+  <h2 class="tieude">Form đặt hàng</h2>
+
+  <div class="tieudecon">
+    <label class="name">Họ và tên:</label>
+    <input type="text" 
+           placeholder="Nguyễn Văn A" 
+           class="block">
+  </div>
+
+  <div class="tieudecon">
+    <label class="name">Email:</label>
+    <input type="email" 
+           placeholder="example@gmail.com" 
+           class="block">
+  </div>
+
+<div class="tieudecon">
+    <label class="name">Địa chỉ giao hàng:</label>
+    <textarea placeholder="Số nhà, tên đường, phường xã..." 
+              class="block"></textarea>
+  </div>
+  <div class="tieudecon">
+    <label class="name">Tỉnh/thành phố</label>
+    <select class="tinh">
+            <option>TP.Hồ Chí Minh</option>
+            <option>Hà Nội</option>
+            </select>
+  </div>
+  <div class="tieudecon">
+    <label class="name">phương thức thanh toán:</label>
+    <input type="radio" name="tt" />tiền mặt
+    <input type="radio" name="tt" />chuyển khoản
+    <input type="radio" name="tt" />ví điện tử
+  </div>
+  <div>
+    <button type="submit"
+            class="dathang">đặt hàng ngay</button>
+  </div>
+</form>
+
+
+    <!-- ↑↑↑ HẾT BÀI 4A ↑↑↑ -->
+
+    <hr style="margin: 24px 0;">
+
+    <!-- Bài 4B: Form đăng nhập (trông như card)
+         Gồm: email, password, checkbox ghi nhớ, nút đăng nhập
+         Form có: border: 1px solid #ddd; padding: 24px; border-radius: 8px; max-width: 340px; -->
+    <!-- ↓↓↓ CODE BÀI 4B ↓↓↓ -->
+
+<h2 style="color: #112887;">Form đăng nhập</h2>
+<form style="width: 300px; padding: 25px; border: 1px solid #ccc;border-radius: 4px; font-size: 14px;">
+  <div style="margin-bottom: 16px;">
+    <label style="display: block; font-weight: bold; margin-bottom: 5px;">Email:</label>
+    <input type="email" 
+           placeholder="example@gmail.com" 
+           style="width: 250px; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px;">
+  </div>
+    <div style="margin-bottom: 16px;">
+    <label style="display: block; font-weight: bold; margin-bottom: 5px;">Email:</label>
+    <input type="password"
+           placeholder="............." 
+           style="width: 250px; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px;">
+  </div>
+  <div style="margin-bottom: 16px;">
+     <input type="checkbox" />ghi nhớ đăng nhập
+  </div>
+    <div style="margin-bottom: 16px;">
+     <button type="submit"
+             style="width: 300px; padding: 8px; border: 1px solid #ccc;
+        border-radius: 4px; font-size: 14px; background-color: #1F3864;color: white">đăng nhập</button>
+  </div> 
+</form>
+
+
+    <!-- ↑↑↑ HẾT BÀI 4B ↑↑↑ -->
+
+    <!--
+    KẾT QUẢ CẦN ĐẠT:
+      4A: Form đặt hàng đầy đủ — mỗi trường có label rõ, style nhất quán
+      4B: Form đăng nhập nhỏ gọn như card — có border + padding + border-radius
+    -->
+  </section>
+
+</body>
+</html>
